@@ -3,6 +3,21 @@
 // Desafio de Xadrez - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+// RECURSIVIDADE PARA TORRE
+void torreRecur(int n){
+	if (n > 0 ){
+		//printf("%d\n",n);
+		torreRecur(n -1);
+		if(n>1){
+			printf("A Torre andou %d casas para direita\n",n);
+		} else {
+			printf("A Torre andou %d casa para direita\n",n);
+		}
+			
+
+	}
+}
+
 
 int main() {
    
@@ -59,6 +74,12 @@ int main() {
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+
+	//TORRE BISPO RAINHA RECURSIVIDADE
+	printf("\nMOVIMENTO DA TORRE USANDO RECURSIVIDADE\n");
+	torreRecur(5);
+	
+
 
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
